@@ -1,9 +1,9 @@
-#include <stddef>
+#include <cstddef>
 #include <cmath>
 #include <cstdio>
 #include <vector>
 #include <iostream>
-#include <algorith>
+#include <algorithm>
 using namespace std;
 class Node
 {
@@ -63,19 +63,18 @@ class Solution {
       }
      }
 };
-
-int main
+int main()
 {
-  Node* head = NULL;
-  Solution mylist;
-  int T, data;
-  cin >> T;
-  while (T-->0)
-  {
-     cin>>data;
-     head = mylist.insert(head, data);
-  }
-  head = mylist.removeDuplicates(head);
-  mylist.display(head);
-  return 0;
+	Node* head=NULL;
+  	Solution mylist;
+    int T,data;
+    cin>>T;
+    while(T-->0){
+        cin>>data;
+        head=mylist.insert(head,data);
+    }	
+    head=mylist.removeDuplicates(head);
+
+	mylist.display(head);
+		
 }
